@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpeg" href="newLogo.JPG" sizes="16x16">
+  <title>Programs</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0a0909;
+            color: #fff;
+            padding: 0.5rem;
+            border-radius: 0 0 10px 10px;
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+    }
+
+    h1 {
+      font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            margin-right: auto;
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-image: url(modernLogo.PNG);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .workout-section {
+      margin: 4rem 0;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+    }
+
+    .arrow {
+      font-family: 'Material Icons';
+      font-size: 24px;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+
+    .details {
+      display: none;
+      margin-top: 20px;
+      font-size: 0.9rem;
+    }
+
+    .workout-section.active .details {
+      display: block;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 1.5rem;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 1rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    ul li::before {
+      content: "\2022";
+      position: absolute;
+      left: 0;
+      font-size: 1.2rem;
+      color: #e74c3c;
+    }
+
+    ul li span {
+      margin-left: 0.5rem;
+    }
+    
+    .nav-link i {
+        color: white;
+        margin-right: 0.5rem;
+    }
+
+    @media (max-width: 768px){
+    .container {
+    padding: 1rem;
+    max-width: 100%; /* Make containers full width */
+    }
+
+    .workout-section {
+    margin: 1rem 0;
+    padding: 0.8rem;
+    border-radius: 10px;
+    width: 100%; /* Make workout sections full width */
+    }
+
+    .workout-section h2 {
+    font-size: 1.2rem;
+    }
+  
+    .details {
+    font-size: 0.8rem;
+    }
+
+    header {
+    padding: 0.5rem;
+    align-items: center;
+    }
+  
+    .nav-link i {
+    color: white;
+    margin-right: 0.5rem;
+    }
+}
+
+
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sections = document.querySelectorAll(".workout-section");
+      sections.forEach(section => {
+        const arrow = section.querySelector(".arrow");
+        arrow.addEventListener("click", function () {
+          section.classList.toggle("active");
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <a href="https://lightsnack.net/" class ="nav-link">
+    <i class="material-icons">home</i>
+    </a>
+    <a href="https://lightsnack.net/shop.html" class = "nav-link">
+    <i class="material-icons">shopping_cart</i>
+    </a>
+    <h1>Light Snack Programs</h1>
+  </header>
+
+  <div class="main-container">
+    <div class="container">
+      <div class="workout-section">
+        <h2>Strength <i class="material-icons arrow">keyboard_arrow_down</i></h2>
+        <div class="details">
+          <p>Strength brought to you by Light Snack.</p>
+          <strong>
+            <p>Plan:</p>
+          </strong>
+          <ul>
+            <li><a href="Light Snack 10 Week Lifting Program2.pdf">Light Snack Lifting Program</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="workout-section">
+        <h2>4 Mile <i class="material-icons arrow">keyboard_arrow_down</i></h2>
+        <div class="details">
+          <p>Professional plan to prepare you for your next event.</p>
+          <strong>
+            <p>Plan:</p>
+          </strong>
+          <ul>
+            <li><a href="Light Snack 4 Mile Running Program.pdf">Light Snack 4 Mile Program</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="workout-section">
+        <h2>Hybrid <i class="material-icons arrow">keyboard_arrow_down</i></h2>
+        <div class="details">
+          <p>Maintaining your strength while staying in shape.</p>
+          <strong>
+            <p>Workout schedule:</p>
+          </strong>
+          <ul>
+            <li><a href="Light Snack 6 Week Hybrid Program2.pdf">Light Snack Hybrid Program</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
