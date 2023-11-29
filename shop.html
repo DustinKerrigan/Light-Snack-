@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpeg" href="newLogo.JPG" sizes="16x16">
+  <title>Light Snack Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 800px; 
+      margin: 0 auto; 
+      padding: 20px;
+    }
+
+    .product {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 2px solid black; /* Add border with 2px width and black color */
+      border-radius: 10px; /* Optional: Add border-radius to give the container rounded corners */
+    }
+
+    .product img {
+      width: 100%;
+      height: 150px; /* Ensure the image maintains aspect ratio within the fixed height */
+      object-fit: contain; /* Maintain aspect ratio without distorting the image */
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      margin: 10px 0;
+      font-size: 18px;
+      flex: 1;
+    }
+
+    .product .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #797979;
+    }
+
+    .checkout-button {
+      font-weight: bold;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #4c59af;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .checkout-button:hover {
+      background-color: #12044d;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="product">
+      <img src="whiteShort.PNG" alt="Shirt 1">
+      <h3>Original Cotton Short-Sleeve</h3>
+      <span class="price">$22.00</span>
+      <a href ="https://buy.stripe.com/fZe2b68h322x6B25kk"><button class="checkout-button">Checkout</button></a>
+    </div>
+    <div class="product">
+      <img src="blackCotton.PNG" alt="Shirt 2">
+      <h3>"Frat" Black Edition</h3>
+      <span class="price">$22.00</span>
+      <a href = "https://buy.stripe.com/4gwg1WcxjfTn9Ne8wy"><button class="checkout-button">Checkout</button></a>
+    </div>
+    <div class="product">
+      <img src="blackPerformance.PNG" alt="Shirt 3">
+      <h3>Performance Black Short-Sleeve</h3>
+      <span class="price">$24.00</span>
+      <a href = "https://buy.stripe.com/4gweXSdBn9uZ3oQbIL"><button class="checkout-button">Checkout</button></a>
+    </div>
+    <div class="product">
+      <img src="whiteShort.PNG" alt="Shirt 4">
+      <h3>Performance White Short-Sleeve</h3>
+      <span class="price" style="color: red">SOLD OUT</span>
+      <a href =""><button class="checkout-button">Checkout</button></a>
+    </div>
+    <div class="product">
+      <img src="blackLong.PNG" alt="Shirt 5">
+      <h3>Performance Black Long-Sleeve</h3>
+      <span class="price">$25.00</span>
+       <a href ="https://buy.stripe.com/14k7vqgNz22x6B2004"><button class="checkout-button">Checkout</button></a>
+    </div>
+    <div class="product">
+      <img src="whiteLong.PNG" alt="Shirt 6">
+      <h3>Performance White Long-Sleeve</h3>
+      <span class="price" style="color: red">SOLD OUT</span>
+      <a href=""><button class="checkout-button">Checkout</button></a>
+    </div>
+  </div>
+</body>
+</html>
