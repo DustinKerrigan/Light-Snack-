@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/jpeg" href="newLogo.JPG" sizes="16x16">
+    <title>Light Snack NIL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .social-media {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icon {
+            display: inline-block;
+            margin-left: 0.5rem;
+            margin-right: 1rem;
+        }
+
+        .social-icon img {
+            width: 30px;
+            height: 30px;
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .social-icon img:hover {
+            opacity: 0.7;
+        }
+
+        .player-profile {
+            background-color: #f8f8f8;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .profile-image {
+            width: 80px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 50%;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .profile-info {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .info-category {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .info-value {
+            color: #333;
+        }
+
+        .highlights {
+            flex: 1;
+            text-align: right;
+        }
+
+        .school-logo {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-size: cover;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .highlights-button {
+            display: flex;
+            align-items: center;
+        }
+
+        button {
+            background-color: #0a0909;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background-color: #0a0909;
+            color: #fff;
+            padding: 0.5rem;
+            border-radius: 0 0 10px 10px;
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            margin-right: auto;
+        }
+
+        .nav-link i {
+        color: white;
+        margin-right: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .player-profile {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px;
+                margin: 15px;
+            }
+
+            .profile-image {
+                margin-right: 0;
+                margin-bottom: 10px;
+                object-position: center;
+            }
+
+            .profile-info {
+                padding-right: 0;
+            }
+
+            .info-category {
+                margin-top: 10px;
+            }
+
+            .school-logo {
+                margin-right: 5px;
+            }
+
+            .highlights {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            header {
+                padding: 0.5rem;
+            }
+
+            .social-media {
+                justify-content: center; 
+                margin-top: 10px; 
+            }
+
+            .social-icon {
+                font-size: 1.2rem; 
+                margin: 0 0.5rem; 
+            }
+            
+            .nav-link i {
+            color: white;
+            margin-right: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://lightsnack.net/" class ="nav-link">
+        <i class="material-icons">home</i>
+        </a>
+        <a href="https://lightsnack.net/shop.html" class = "nav-link">
+        <i class="material-icons">shopping_cart</i>
+        </a>
+        <h1>Light Snack NIL</h1>
+    </header>
+    <div class="player-profile">
+        <img src="newDylan.JPG" alt="Profile-Image" class="profile-image">
+        <div class="profile-info">
+            <div class="info-category">Light Snack Athlete</div>
+            <div class="info-value">Dylan Cook</div>
+            <div class="info-category">School</div>
+            <div class="info-value">
+                <img src="moreHead.png" alt="School-Logo" class="school-logo">
+                Morehead State University
+            </div>
+            <div class="info-category">Sport</div>
+            <div class="info-value">Football</div>
+            <div class="info-category">Position</div>
+            <div class="info-value">Defensive Back</div>
+            <div class="info-category">Number</div>
+            <div class="info-value">5</div>
+            <div class="info-category">Accolades</div>
+            <div class="info-value">Arizona 1st Team All-State</div>
+            <div class="info-category">Bio</div>
+            <div class="info-value">
+                Introducing Dylan Cook, the tenacious college athlete hailing from Tucson, Arizona, whose journey from Ironwood Ridge High School to Morehead State is a testament to his unyielding commitment to excellence. Named first team all Arizona during his high school years, Dylan’s football prowess was evident through his stats: 130+ tackles, 16 interceptions, and 12 touchdowns in just 3 seasons. Despite setbacks of a canceled senior season due to COVID-19, Dylan’s dedication shined as he made his mark at Morehead State University, appearing in all 11 games as a redshirt freshman and now gearing up to start at safety for the Eagles. Beyond his football achievements, Dylan boasts a collection of over 100 sneakers, and has achieved world ranking as a Madden player. Light Snack is proud to partner with this multifaceted athlete as he continues to redefine the world of college sports on and off the field. Join us in following Dylan Cook’s journey. 
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="https://twitter.com/Dylancook43" class="social-icon">
+                <img src="xLogo2.png" alt="Twitter-Icon">
+            </a>
+            <a href="https://www.instagram.com/dylancook43/" class="social-icon">
+                <img src="insta.png" alt="Instagram-Icon">
+            </a>
+        </div>
+        <button class="highlights-button">Highlights</button>
+    </div>
+</body>
+</html>
